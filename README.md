@@ -128,13 +128,11 @@ print data with appropriate data header like "First Name: " plus Student::Fname 
 create prototypes for functions
 
 int main function
-    
+    create vector of student pointers called students
     use loadStudents()
 
     create a while using keepGoing
-        use menu() to print the string dialogue
-
-        request input and put input into response
+        use menu() to print the string dialogue and get input 
 
         if response == 0
             keepGoing = false
@@ -150,12 +148,39 @@ int main function
 
 std::string menu()
     print menu options
+    request input and store into response
+    return response
 
 void delStudent()
     for each item in the student vector
         delete student        
 
 void loadStudents()
+    open file and put into inFile
+    bool keepGoing = true
+    use while using keepGoing
+        use for loop set to loop 9 times
+            use getline and add to student data
+        if studentdata == ""
+            keepGoing = false
+        else
+            put student data into student constructor
+            clear student data    
     
-    
+void findStudents()
+    for each student in students vector
+        use student::getFname()
+        if student::FName == input
+            use student::printStudent()
+
+void printStudents()
+    for each student in students vector 
+        use student::printStudent()
+        
+void showStudentNames()
+    for each student in students vector
+        use student::getLastFirst and put into LastFirst
+        print LastFirst
+        print newline
+
 ```
