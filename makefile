@@ -27,5 +27,5 @@ run: database
 debug: database
 	gdb database
 
-Valgrind: database
+valgrind: database
 	valgrind --leak-check=full ./database

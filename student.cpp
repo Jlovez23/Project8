@@ -72,6 +72,10 @@ std::string Student::getLname(){
 	return Student::Lname;
 }// end getLname
 
+int Student::getCredit(){
+	return Student::CreditHours;
+}// end getCredit
+
 std::string Student::getLastFirst(){
 	std::string LnameFname;
 	LnameFname = Student::getLname() + ", " +  Student::getFname();
