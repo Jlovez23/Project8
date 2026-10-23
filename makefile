@@ -17,9 +17,6 @@ date.o: date.h date.cpp
 clean:
 	rm *.o
 	rm database
-	rm testAddress
-	rm testDate
-	rm testStudent
 
 run: database
 	./database
